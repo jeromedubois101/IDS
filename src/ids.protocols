@@ -1,0 +1,8 @@
+http:80:0:tcp
+ssh:22:1:tcp
+dns:53:0:udp
+https:443:1:tcp
+smtp:25:0:tcp
+telnet:23:0:tcp
+ftp:21:0:tcp
+ftp:20:0:tcp

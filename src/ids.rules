@@ -1,0 +1,6 @@
+alert http any any -> any any (msg:"shell attack"; content:"malware.exe";)
+alert tcp any any -> any 8888 (msg:"backdoor attack";)
+alert udp any any -> any 9999 (msg:"UDP traffic bind port is forbidden";)
+alert ftp any any -> any any (msg:"Unsecure protocol use detected";)
+alert http any any -> any 80 (msg:"XSS Suspected"; content:"</script>";)
+alert http any any -> any 80 (msg:"XSS Suspected"; content:"3C/script";)
